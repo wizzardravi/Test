@@ -25,7 +25,7 @@ namespace GKLSWeb.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             });
         }
-
+//test commit
         public class WeatherForecast
         {
             public string DateFormatted { get; set; }
