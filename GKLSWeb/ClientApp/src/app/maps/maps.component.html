@@ -1,0 +1,32 @@
+<h1>Your IP is based out of {{state}} - {{city}}</h1>
+
+
+<div class="container-fluid">
+  <div class="row">
+  <div class="col-md-12">
+    <h2>Locate on Map</h2>
+    <div class="form-group">
+  <label for="place">Search google Place</label>
+  <input type="text" id="place" class="form-control" #search [formControl]="searchControl" autocomplete="off" autocapitalize="off" spellcheck="off">
+  
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <agm-map [latitude] = "latitude" [longitude] = "longitude">
+          <agm-marker *ngFor="let latlong of latlongs" [latitude] = "latlong.latitude" [longitude] = "latlong.longitude"></agm-marker>
+        </agm-map>
+        
+      </div>
+    </div>
+  </div>
+  
+  </div>
+  
+  </div>
+
+<!-- <agm-map [latitude] = "lat" [longitude] = "lng">
+  <agm-marker [latitude] = "lat" [longitude] = "lng"></agm-marker>
+</agm-map> -->
+
+
