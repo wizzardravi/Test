@@ -12,6 +12,7 @@ export class AboutUsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    alert('I am first hit of tthis page');
   }
 
   ShowPartnerList = function(){

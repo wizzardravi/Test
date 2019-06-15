@@ -14,8 +14,9 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutUsComponent } from './about-us/about-us.component';
-import { ComponentNameComponent } from './component-name/component-name.component';
 import { MapsComponent } from './maps/maps.component';
+import { AvengersComponent } from './avengers/avengers.component';
+import { VideosComponent } from './videos/videos.component';
 
 @NgModule({
   declarations: [
@@ -26,8 +27,9 @@ import { MapsComponent } from './maps/maps.component';
     FetchDataComponent,
     ContactComponent,
     AboutUsComponent,
-    ComponentNameComponent,
     MapsComponent,
+    AvengersComponent,
+    VideosComponent,
     
   ],
   imports: [
@@ -45,7 +47,9 @@ import { MapsComponent } from './maps/maps.component';
       { path: 'fetch-data', component: FetchDataComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'about-us', component: AboutUsComponent },
-      { path: 'maps', component: MapsComponent }
+      { path: 'maps', component: MapsComponent },
+      { path: 'avengers', component: AvengersComponent },
+      { path: 'videos', component: VideosComponent }
       
     ])
   ],

@@ -17,7 +17,7 @@ constructor(private map:MapsService){}
 
 ngOnInit(){
   this.map.getLocation().subscribe(data=>{
-    console.log(data);
+    // console.log(data);
     this.lat = data.latitude;
     this.lng= data.longitude;
   })

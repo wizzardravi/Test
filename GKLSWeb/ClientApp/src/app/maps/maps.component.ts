@@ -65,13 +65,13 @@ this.mapsAPILoader.load().then(()=>{
   })
 });
 
-    // this.map.getLocation().subscribe(data=>{
-    //   //console.log(data);
-    //   this.lat = data.latitude;
-    //   this.lng= data.longitude;
-    //   this.state=data.region_name;
-    //   this.city = data.city;
-    // });
+    this.map.getLocation().subscribe(data=>{
+      console.log(data);
+      this.lat = data.latitude;
+      this.lng= data.longitude;
+      this.state=data.region_name;
+      this.city = data.city;
+    });
   }
 
 
